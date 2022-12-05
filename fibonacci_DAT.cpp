@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-int fib(int n,int DAT[],int i)
+int fib(int DAT[],int i)
 {
     if (i==0)
     {
@@ -16,8 +16,8 @@ int fib(int n,int DAT[],int i)
         {
             if (DAT[i]==0)
             {
-                DAT[i]=fib(n,DAT,i-1)+fib(n,DAT,i-2);
-            } 
+                DAT[i]=fib(DAT,i-1)+fib(DAT,i-2);
+            }
         }
     }
     return DAT[i];
@@ -32,6 +32,6 @@ int main()
     DAT[i]=0;
     for(int i=0;i<n;i++)
     {
-        cout<<fib(n,DAT,i)<<" ";
+        cout<<fib(DAT,i)<<" ";
     }
 }

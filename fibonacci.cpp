@@ -14,9 +14,6 @@ int fibonacci(int n)
 int main()
 {
     int x;
-    for(int i=1;i<=100;i++)
-    {
-        x=fibonacci(i);
-        cout<<"("<<i<<")"<<" "<<x<<" ";
-    }
+    cin>>x;
+    cout<<fibonacci(x)<<" ";
 }
